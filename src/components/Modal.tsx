@@ -7,10 +7,12 @@ interface IModalProps {
   title: string;
   subtitle: string;
   points: IPropsListItem[];
+  okText: string;
+  laterText: string;
 }
 
 const Modal: FC<IModalProps> = (props) => {
-  const { points, subtitle, title } = props;
+  const { points, subtitle, title, laterText, okText } = props;
   const splittedTitle = title.split(" ");
   return (
     <div className="grid absolute top-0 w-screen left-0 z-20 place-content-center min-h-screen dark:bg-black dark:text-white pl-[46px] pr-[26px] shadow-md rounded-xl font-lato">
@@ -31,7 +33,7 @@ const Modal: FC<IModalProps> = (props) => {
           <ListItem {...item} />
         ))}
       </section>
-      <ButtonsContainer okayText="Let's Go!" laterText="Later" />
+      <ButtonsContainer okayText={okText} laterText={laterText} />
     </div>
   );
 };

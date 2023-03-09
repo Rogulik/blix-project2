@@ -7,6 +7,8 @@ function App() {
       points={content}
       subtitle="Here is my cool subtitle. This is something that everyone likes"
       title="My Title"
+      okText="Let's go"
+      laterText="Later"
     />
   );
 }
