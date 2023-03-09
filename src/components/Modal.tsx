@@ -26,7 +26,7 @@ const Modal: FC<IModalProps> = (props) => {
         <p className="font-normal text-lg leading-[100%]">{subtitle}</p>
       </div>
 
-      <section className="flex relative flex-col items-center h-[460px] overflow-y-scroll  my-[64px]">
+      <section className="flex relative flex-col items-center h-[460px] overflow-y-scroll  my-[64px] sm:grid sm:grid-cols-2 sm:gap-4 sm:h-full sm:overflow-y-auto sm:my-0 sm:py-[64px] lg:grid-cols-3">
         {points.map((item) => (
           <ListItem {...item} />
         ))}
