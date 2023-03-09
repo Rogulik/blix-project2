@@ -13,7 +13,7 @@ const Modal: FC<IModalProps> = (props) => {
   const { points, subtitle, title } = props;
   const splittedTitle = title.split(" ");
   return (
-    <div className="grid absolute top-0 left-0 z-20 place-content-center min-h-screen dark:bg-black dark:text-white pl-[46px] pr-[26px] shadow-md rounded-xl font-lato">
+    <div className="grid absolute top-0 w-screen left-0 z-20 place-content-center min-h-screen dark:bg-black dark:text-white pl-[46px] pr-[26px] shadow-md rounded-xl font-lato">
       <img
         src="src/assets/img/exit.svg"
         className="absolute top-[18px] left-[18px]"
